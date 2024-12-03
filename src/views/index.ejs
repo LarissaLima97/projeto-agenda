@@ -1,0 +1,33 @@
+<%- include('includes/head'); %>
+
+    <section class="container">
+        <h1>
+            <% if(typeof titulo !== 'undefined') {%>
+                <%= titulo %> <br> <!--Exibe exatamente o que está escrito-->
+                <%- titulo %> <!--Utilizado somente quando há um conteúdo html-->
+            <% } else { %>
+                O título não foi enviado
+            <% } %>
+
+        </h1>
+
+        <h2>
+            <%= umaVariavelLocal %> <!--Variável do middlewareGlobal-->
+        </h2>
+
+        <p>
+            <% numeros.forEach(num => { %>
+                <%= num %><br>
+            <% }); %>
+        </p>
+
+        <form class="form" action="/" method="post">
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <label class="label" for="teste1">Cliente:</label>
+            <input class="input" type="text" name="cliente" id="teste1">
+
+            <button class="button">Enviar</button>
+        </form>
+    </section>
+
+<%- include('includes/footer'); %>
