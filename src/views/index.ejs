@@ -1,33 +1,33 @@
-<%- include('includes/head'); %>
+<%- include('includes/head')%>
+<%- include('includes/nav')%>
+<div class="container"> 
+    <div class="row">
+        <div class="col-lg-2"></div>
 
-    <section class="container">
-        <h1>
-            <% if(typeof titulo !== 'undefined') {%>
-                <%= titulo %> <br> <!--Exibe exatamente o que está escrito-->
-                <%- titulo %> <!--Utilizado somente quando há um conteúdo html-->
-            <% } else { %>
-                O título não foi enviado
-            <% } %>
+        <div class="col-lg-8 my-3">
+            <h1 class="text-center">Agenda</h1>
+            <p class="text-center lead">Seus contatos estão abaixo</p>
 
-        </h1>
+            <div class="row">
+                <div class="col my-3">
+                    <div class="alert alert-danger">Um erro qualquer</div>
+                </div>
+            </div>
 
-        <h2>
-            <%= umaVariavelLocal %> <!--Variável do middlewareGlobal-->
-        </h2>
+            <div class="responsive-table">
+                <table class="table my-3">
+                    <tr>
+                        <td>Luiz</td>
+                        <td>Otávio</td>
+                        <td>88888</td>
+                        <td>otavio@email</td>
+                    </tr>
+                </table>
+            </div>
 
-        <p>
-            <% numeros.forEach(num => { %>
-                <%= num %><br>
-            <% }); %>
-        </p>
+        </div>
 
-        <form class="form" action="/" method="post">
-            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-            <label class="label" for="teste1">Cliente:</label>
-            <input class="input" type="text" name="cliente" id="teste1">
-
-            <button class="button">Enviar</button>
-        </form>
-    </section>
-
-<%- include('includes/footer'); %>
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+<%- include('includes/footer')%>

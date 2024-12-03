@@ -20,69 +20,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `:root {
-    --primary-color: rgba(90, 60, 116, 0.808);
-    --second-color: rgba(194, 151, 231, 0.808);
-}
-
-* {
-    box-sizing: border-box;
-    outline: 0;
-}
-
-body {
-    margin: 0; 
-    padding: 0;
-    background-color: var(--primary-color);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3em;
-    line-height: 1.5em;
-}
-
-.container {
-    max-width: 640px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-form input, form label, form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-form input { 
-    font-size: 24px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
-}
-
-form input:focus {
-    outline: 1px solid var(--second-color) ;
-}
-
-form button {
-    border: none;
-    background-color: var(--second-color);
-    height: 50px;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: var(--primary-color);
-}
-`, "",{"version":3,"sources":["webpack://./frontend/assets/css/style.css"],"names":[],"mappings":"AAEA;IACI,yCAAyC;IACzC,0CAA0C;AAC9C;;AAEA;IACI,sBAAsB;IACtB,UAAU;AACd;;AAEA;IACI,SAAS;IACT,UAAU;IACV,sCAAsC;IACtC,oCAAoC;IACpC,gBAAgB;IAChB,kBAAkB;AACtB;;AAEA;IACI,gBAAgB;IAChB,gBAAgB;IAChB,iBAAiB;IACjB,kBAAkB;IAClB,4BAA4B;IAC5B,aAAa;IACb,mBAAmB;AACvB;;AAEA;IACI,cAAc;IACd,WAAW;IACX,mBAAmB;AACvB;;AAEA;IACI,eAAe;IACf,YAAY;IACZ,mBAAmB;IACnB,YAAY;AAChB;;AAEA;IACI,uCAAuC;AAC3C;;AAEA;IACI,YAAY;IACZ,qCAAqC;IACrC,YAAY;IACZ,gBAAgB;IAChB,eAAe;IACf,gBAAgB;IAChB,iBAAiB;IACjB,eAAe;AACnB;;AAEA;IACI,sCAAsC;AAC1C","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');\n\n:root {\n    --primary-color: rgba(90, 60, 116, 0.808);\n    --second-color: rgba(194, 151, 231, 0.808);\n}\n\n* {\n    box-sizing: border-box;\n    outline: 0;\n}\n\nbody {\n    margin: 0; \n    padding: 0;\n    background-color: var(--primary-color);\n    font-family: 'Open Sans', sans-serif;\n    font-size: 1.3em;\n    line-height: 1.5em;\n}\n\n.container {\n    max-width: 640px;\n    margin-top: 50px;\n    margin-left: auto;\n    margin-right: auto;\n    background-color: whitesmoke;\n    padding: 20px;\n    border-radius: 10px;\n}\n\nform input, form label, form button {\n    display: block;\n    width: 100%;\n    margin-bottom: 10px;\n}\n\nform input { \n    font-size: 24px;\n    height: 50px;\n    border-radius: 10px;\n    border: none;\n}\n\nform input:focus {\n    outline: 1px solid var(--second-color) ;\n}\n\nform button {\n    border: none;\n    background-color: var(--second-color);\n    height: 50px;\n    margin-top: 20px;\n    font-size: 20px;\n    font-weight: 700;\n    color: whitesmoke;\n    cursor: pointer;\n}\n\nform button:hover {\n    background-color: var(--primary-color);\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
