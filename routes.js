@@ -1,14 +1,14 @@
 const express = require('express'); 
 const route = express.Router(); 
 const homeController = require('./src/controllers/homeController');
-const contatoController = require('./src/controllers/contatoController');
+const loginController = require('./src/controllers/loginController');
+
 
 //Rotas da Home
-route.get('/',homeController.paginaInicial); //estes outros parâmetros( homeController.paginaInicial) são chamados de middlewares, por exemplo 
-//podemos criar uma função no meio do caminho ou depois de já ter respondido o cliente para realizar alguma tarefa
-route.post('/', homeController.enviaForm);
+route.get('/',homeController.index);
 
-//Rotas de contato
-route.get('/contato', contatoController.paginaContato);
+//Rotas de Login
+route.get('/login/index',loginController.index);
+
 
 module.exports = route;
