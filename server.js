@@ -51,7 +51,7 @@ app.use(routes);
 
 app.on('pronto', () => {
     app.listen(3000, () => {
-        console.log('Servidor execuntando na porta 3000');
+        console.log('Servidor executando na porta 3000');
         console.log('Acessar: http://localhost:3000');
     });
 } )
