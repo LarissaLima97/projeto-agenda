@@ -59,7 +59,7 @@ Contato.buscaPorId = async function (id) {
     return contato;
 };
 
-Contato.buscaContatos = async function (email) {
+Contato.buscaContatos = async function () {
     const contatos = await ContatoModel.find()
         .sort({criadoEm: -1}); //ordendando os contatos em ordem decrescente
     return contatos;
