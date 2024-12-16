@@ -33,7 +33,7 @@ exports.editIndex = async (req, res) => {
         const contato = await Contato.buscaPorId(req.params.id);
         if(!contato) return res.render('404');
 
-        res.render('contato', { contato })
+        res.render('contato', { contato });
 };
 
 exports.edit = async (req,res) => {
@@ -56,4 +56,14 @@ exports.edit = async (req,res) => {
         console.log(e);
         return res.render('404');
     }
+};
+
+exports.delete = async (req, res) => {
+    if(!req.params.id) return res.render('404');
+    const contato = await Contato.delete(req.params.id);
+    if(!contato) return res.render('404');
+
+    req.flash('success', 'Seu contato foi apagado com sucesso.');
+    req.session.save(() => res.redirect("/"));
+    return;
 };
