@@ -52,15 +52,22 @@ Pronto, você já tem o repositório na sua máquina.
 npm install
 
 ```
+2. Após as dependências serem instaladas, crie um arquivo `.env` com sua CONNECTIONSTRING do MongoDB. 
 
-3. Após as dependências serem instaladas, digite o comando abaixo para rodar a aplicação localmente. 
+```
+CONNECTIONSTRING=sua connection string do mongo
+
+```
+
+3. Após criar o arquivo `.env` e adicionar sua CONNECTIONSTRING, digite o comando abaixo para rodar a aplicação localmente. 
 
 ```
 npm start
 
 ```
 
-4. Abra [http://localhost:3000](http://localhost:3000) para vizualizar no browser.
+
+5. Abra [http://localhost:3000](http://localhost:3000) para vizualizar no browser.
 
 ```
 Pronto, aplicação já está rodando!
